@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensure padding and border are included in element's total width and height */
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-image: url("backGround.png");
+    background-size: cover; /* Ensure background image covers the entire viewport */
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px; /* Add padding for better spacing */
+}
+
+.testimonials-heading {
+    letter-spacing: 1px;
+    margin: 30px 0;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonials-heading h2 {
+    font-size: 30px;
+    font-weight: 500;
+    background-color: #202020;
+    color: white;
+    padding: 10px 20px;
+}
+
+.testimonials-heading span {
+    font-size: 20px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.box {
+    width: 100%;
+    max-width: 500px; /* Ensure box does not exceed a max width */
+    box-shadow: 2px solid rgba(0, 0, 0, 0.1);
+    background-image: linear-gradient(90deg, rgb(60, 250, 13), rgb(204, 255, 0));
+    padding: 20px;
+    margin: 15px;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Smooth hover transition */
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.profile-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.name-user {
+    display: flex;
+    flex-direction: column;
+}
+
+.name-user strong {
+    color: #2a2929;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+
+.name-user span {
+    color: #886969;
+    font-size: 0.8rem;
+}
+
+.reviews {
+    color: rgb(0, 102, 255);
+}
+
+.box-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.client-comments p {
+    font-size: 0.9rem;
+    color: black;
+}
+
+.box:hover {
+    transform: translateY(-10px);
+}
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 1024px) {
+    .testimonials-heading h2 {
+        font-size: 25px;
+        padding: 8px 16px;
+    }
+
+    .testimonials-heading span {
+        font-size: 18px;
+    }
+
+    .box {
+        max-width: 90%;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .testimonials-heading h2 {
+        font-size: 20px;
+        padding: 6px 12px;
+    }
+
+    .testimonials-heading span {
+        font-size: 16px;
+    }
+
+    .box {
+        max-width: 100%;
+        padding: 12px;
+        margin: 10px;
+    }
+
+    .client-comments p {
+        font-size: 0.85rem;
+    }
+
+    .name-user strong {
+        font-size: 1rem;
+    }
+
+    .name-user span {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .testimonials-heading h2 {
+        font-size: 18px;
+        padding: 5px 10px;
+    }
+
+    .testimonials-heading span {
+        font-size: 14px;
+    }
+
+    .box {
+        padding: 10px;
+        margin: 8px;
+    }
+
+    .client-comments p {
+        font-size: 0.8rem;
+    }
+
+    .name-user strong {
+        font-size: 0.9rem;
+    }
+
+    .name-user span {
+        font-size: 0.7rem;
+    }
+}
